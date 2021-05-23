@@ -242,6 +242,70 @@ function open_task(el) {
 		document.getElementById("task_1").setAttribute("complete", "true")
 		el.className = "start_point"
 	}
+	else if (el.id == "task_1") {
+		$('.popup').empty()
+		$('.popup').html("Лекция №1<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_2").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
+	else if (el.id == "task_2") {
+		$('.popup').empty()
+		$('.popup').html("Лекция №2<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_3").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
+	else if (el.id == "task_4") {
+		$('.popup').empty()
+		$('.popup').html("Лекция №3<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_5").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
+	else if (el.id == "task_6") {
+		$('.popup').empty()
+		$('.popup').html("Лекция №4<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_7").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
+	else if (el.id == "task_8") {
+		$('.popup').empty()
+		$('.popup').html("Лекция №5<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_9").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
+	else if (el.id == "task_3_0") {
+		$('.popup').empty()
+		$('.popup').html("Лекция по теме №1<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_3_1").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
+	else if (el.id == "task_5_0") {
+		$('.popup').empty()
+		$('.popup').html("Лекция по теме №2<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_5_1").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
+	else if (el.id == "task_7_0") {
+		$('.popup').empty()
+		$('.popup').html("Лекция по теме №3<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		$('.popup').show()
+		el.setAttribute("complete", "true")
+		document.getElementById("task_7_1").setAttribute("complete", "true")
+		el.className = "start_point"
+	}
 	else if ((el.id == "task_3" || el.id == "task_5" || el.id == "task_7") && el.getAttribute("complete") == "true") {
 		var l = getRandomInt(1,4)
 		$('.popup').empty()
@@ -254,12 +318,7 @@ function open_task(el) {
 	else if (el.getAttribute("complete") == "true"){
 		var l = getRandomInt(1,20)
 		$('.popup').empty()
-		if (l > 17) {
-			$('.popup').html("<img src=\"pvp1.jpg\" id=\"mem1\"><button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
-		}
-		else {
-			$('.popup').html("text №" + l.toString() +"<button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
-		}
+		$('.popup').html("<img src=\"pvp1.jpg\" id=\"mem1\"><button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
 		$('.popup').show()
 		el.nextElementSibling.setAttribute("complete", "true")
 		el.className = "start_point"
