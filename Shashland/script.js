@@ -318,7 +318,12 @@ function open_task(el) {
 	else if (el.getAttribute("complete") == "true"){
 		var l = getRandomInt(1,20)
 		$('.popup').empty()
-		$('.popup').html("<img src=\"pvp1.jpg\" id=\"mem1\"><button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		if (l < 8) {
+			$('.popup').html("<img src=\"pvp1.jpg\" id=\"mem1\"><button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		}
+		else {
+			$('.popup').html("<img src=\"mem1.jpg\" id=\"mem1\"><button class=\"ok\" onclick=\"openclose()\"><b>ОК</b></button>")
+		}
 		$('.popup').show()
 		el.nextElementSibling.setAttribute("complete", "true")
 		el.className = "start_point"
