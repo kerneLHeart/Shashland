@@ -221,12 +221,6 @@ function newground() {
 		p++
 	}
 
-	$('.ok').on('click', function() {
-		$('.popup').hide()
-		alert("LOX!")
-		sessionStorage.removeItem(dis)
-		sessionStorage.setItem(dis, document.body.innerHTML.replace(document.body.innerHTML.substr(660,103), ""))
-	});
 }
 
 function getRandomInt(min, max) {
@@ -275,8 +269,7 @@ function open_task(el) {
 function openclose(){
 	$('.popup').hide()
 	sessionStorage.removeItem(dis)
-	//sessionStorage.setItem(dis, document.body.innerHTML.replace(document.body.innerHTML.substr(0,600), ""))
-	sessionStorage.setItem(dis, document.body.innerHTML.replace(document.body.innerHTML.substr(620,103), ""))
+	sessionStorage.setItem(dis, document.body.innerHTML.replace(document.body.innerHTML.substr(628,103), ""))
 }
 //el.nextElementSibling.style.display = 'block'
 //document.getElementById('sup_' + el.id.substr(5)).style.display = 'block'
