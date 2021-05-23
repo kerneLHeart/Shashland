@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shashland</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+	
+	<div id="h">
+	    <ul id="nav">
+	    	<li><a href="https://shashland-nyx3m.ondigitalocean.app/index.html" id="home" style="margin-left: 10px;">Домой</a></li>
+	        <li><a href="#">Подготовка</a>
+	            <ul>
+	                <li><a href="#">ОГЭ</a>
+	                    <ul>
+	                        <li><a href="#">География</a></li>
+	                        <li><a href="#">Физика</a></li>
+	                        <li><a href="#">Обществознание</a></li>
+	                        <li><a href="#">Литература</a></li>
+	                    </ul>
+	                </li>
+	                <li><a href="#">ЕГЭ</a>
+	                    <ul>
+	                        <li><a href="#">Химия</a></li>
+	                        <li><a href="#" onclick="sessionStorage.setItem('mat', 0); sessionStorage.setItem('eng', 1); alert('Foreign language')">Иностранный</a></li>
+	                        <li><a href="#" onclick="sessionStorage.setItem('mat', 1); sessionStorage.setItem('eng', 0); alert('Math')">Математика</a></li>
+	                    </ul>
+	                </li>
+	                <li><a href="#">ВУЗ</a>
+	                    <ul>
+	                        <li><a href="#">Математический анализ</a></li>
+	                        <li><a href="#">Физическая география</a></li>
+	                        <li><a href="#">Статистика</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </li>
+	        <li><a href="https://shashland-nyx3m.ondigitalocean.app/scorepage.html" id="score">Scoreboard</a></li>
+	        <li><a  href="https://shashland-nyx3m.ondigitalocean.app/map.html" id="map">Подземелье</a></li>
+	        <li><a  href="https://shashland-nyx3m.ondigitalocean.app/pvp.html" id="pvp">PVP</a></li>
+	    </ul>
+	</div>
+	
+	
+	
+</div>
+<div class="flex">
+<img src="pers.jpg" id="pers">
+<img src="meet.jpg" id="meeting">
+
+<img src="list.jpg" id="list"></div>
+</body>
+</html>
+
+<script type='text/javascript'>
+	sessionStorage.setItem('mat', 0)
+	sessionStorage.setItem('eng', 1)
+</script>
